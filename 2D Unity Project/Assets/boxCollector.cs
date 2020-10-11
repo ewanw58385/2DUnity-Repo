@@ -14,6 +14,7 @@ void OnTriggerEnter2D(Collider2D other)
         {
             Destroy(other.gameObject);
             boxCounter = boxCounter + 1;
+            //boxCounter++; (same error^)
             boxText.text = "= " + boxCounter.ToString(); 
         }
     }
