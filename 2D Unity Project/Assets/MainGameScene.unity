@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266360446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 2.5, z: -12}
+  m_LocalPosition: {x: -0, y: 2.5, z: -5.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -510,16 +510,16 @@ RectTransform:
   m_GameObject: {fileID: 1153692006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1211503928}
   m_Father: {fileID: 632826540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -329.17004, y: 176.3}
-  m_SizeDelta: {x: 100, y: 30.554321}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 225, y: -150}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153692008
 MonoBehaviour:
@@ -654,7 +654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73, y: -4.5}
+  m_AnchoredPosition: {x: -73, y: 30}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211503929
@@ -1261,7 +1261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122956055}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.44, y: 1.29, z: 0}
+  m_LocalPosition: {x: 2.73, y: 1.28, z: 0}
   m_LocalScale: {x: 1.4450475, y: 1.5192215, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1410,6 +1410,10 @@ PrefabInstance:
     - target: {fileID: 3867313852490114241, guid: 549f9c164a8e841fabcdcead21d54224, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.7243984
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729784606993262739, guid: 549f9c164a8e841fabcdcead21d54224, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 549f9c164a8e841fabcdcead21d54224, type: 3}
