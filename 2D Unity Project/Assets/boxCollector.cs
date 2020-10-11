@@ -5,7 +5,7 @@ using TMPro;
 
 public class boxCollector : MonoBehaviour
 { 
-public float boxCounter = 0f;  
+public int boxCounter = 0;  
 public TextMeshProUGUI boxText;
 void OnTriggerEnter2D(Collider2D other)
     
