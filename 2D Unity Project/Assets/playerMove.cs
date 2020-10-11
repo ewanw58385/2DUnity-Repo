@@ -36,15 +36,5 @@ public class playerMove : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector3 (0, 5, 0);
         }   
         //ref. (for preventing infinite jumping) - youtube: Design and Deploys
-
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    
-    {
-        if (other.gameObject.CompareTag("Pickup")) //ref. CodeMonkey 
-        {
-            Destroy(other.gameObject);
-        }
     }
 }
