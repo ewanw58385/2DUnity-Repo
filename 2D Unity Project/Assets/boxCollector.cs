@@ -13,9 +13,8 @@ void OnTriggerEnter2D(Collider2D other)
         if (other.transform.tag == "Pickup") //ref. Latosos 
         {
             Destroy(other.gameObject);
-            boxCounter = boxCounter + 1;
-            //boxCounter++; (same error^)
-            boxText.text = "= " + boxCounter.ToString(); 
+            boxCounter++;
+            boxText.text = "=" + boxCounter.ToString(); 
         }
     }
 }
