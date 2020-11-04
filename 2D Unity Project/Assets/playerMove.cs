@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class playerMove : MonoBehaviour
 {
+    private Animator anim;
+
+    void start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     void Update()
     {
+        
         float xSpeed=0;
         float ySpeed=0;
 
@@ -13,7 +21,10 @@ public class playerMove : MonoBehaviour
         {
             // registers a key held down and returns true
             xSpeed = -3.5f;  
-            transform.rotation = Quaternion.Euler(0, 180f, 0); //ref. unity forums
+            transform.rotation = Quaternion.Euler(0, 180f, 0); //ref. unity forums   
+             anim.SetFloat("speed", Mathf.Abs(xSpeed)); /*makes speed parameter the value of xspeed, 
+             a forced positive number so animation should play.*/
+          
         }
 
         if (Input.GetKey("d"))
@@ -21,6 +32,12 @@ public class playerMove : MonoBehaviour
             // registers a key held down and returns true
             xSpeed = 3.5f;
             transform.rotation = Quaternion.Euler(0, 0, 0); //ref. unity forums
+             anim.SetFloat("speed", xSpeed);
+        } 
+
+        if (xSpeed == 0); //if player isn't moving, parameter bool 'idle' is true so idle anim should play.
+        {
+         anim.SetBool("idle", true);
         }
 
         transform.position += new Vector3(xSpeed * Time.deltaTime, ySpeed * Time.deltaTime, 0);

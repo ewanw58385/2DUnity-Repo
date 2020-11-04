@@ -1420,6 +1420,7 @@ GameObject:
   - component: {fileID: 1378558551}
   - component: {fileID: 1378558553}
   - component: {fileID: 1378558554}
+  - component: {fileID: 1378558555}
   m_Layer: 0
   m_Name: Player-Idle
   m_TagString: Player
@@ -1581,6 +1582,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCounter: 0
   boxText: {fileID: 1153692008}
+--- !u!95 &1378558555
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378558547}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: da3ec777f52872d46b2e5e3e0300a3e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1386382995
 GameObject:
   m_ObjectHideFlags: 0
