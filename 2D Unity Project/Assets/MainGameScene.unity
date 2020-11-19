@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 1378558554}
   - component: {fileID: 1378558555}
   m_Layer: 0
-  m_Name: Player-Idle
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1568,6 +1568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 889f4ba018bf049d7b1d3d67cc5c03a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1378558555}
 --- !u!114 &1378558554
 MonoBehaviour:
   m_ObjectHideFlags: 0
